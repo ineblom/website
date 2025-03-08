@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phonebook - Theodor Ineblom</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-neutral-900">
+  <header class="flex justify-between items-center py-4 px-16">
+    <a href="/" class="text-neutral-200 hover:text-slate-500 transition-all text-2xl font-bold font-mono">
+      Theodor Ineblom
+    </a>
+    <a href="mailto:theodor@ineblom.com" class="text-neutral-200 hover:text-slate-500 transition-all text-sm font-mono">
+      theodor@ineblom.com
+    </a>
+  </header>
+
+  <main class="container mx-auto text-neutral-300 pt-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <a href="/" class="text-neutral-400 hover:text-neutral-200 transition-all font-mono mb-8 inline-block">
+        &larr; Go Back
+      </a>
+
+      <img src="/phonebook.webp" alt="Phonebook project" class="w-full aspect-[3/1] rounded-lg mb-8 object-cover" />
+
+      <h1 class="text-4xl font-bold font-mono mb-6">Phonebook</h1>
+
+      <div class="mb-8 flex flex-wrap gap-2">
+        <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm">Go</span>
+        <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm">React</span>
+        <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm">ArangoDB</span>
+        <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+        <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm">Canvas</span>
+      </div>
+
+      <div class="font-serif space-y-6 text-lg">
+        <p>
+          Phonebook is an experimental project that explores the power of social data. It builds a network of
+          relationships between users by accessing their phone contacts and analyzing connection patterns. The result
+          is a fascinating visualization of how people are interconnected through their contact lists. By analyzing
+          the data we can draw conclusions about how people are related.
+        </p>
+
+        <h2 class="text-2xl font-sans font-bold mt-8">Concept</h2>
+        <p>
+          The concept behind Phonebook is simple yet powerful: by analyzing who has each other in their contacts,
+          we can map out social connections and discover patterns that would otherwise remain hidden. The project
+          creates a visual graph representation of these connections, allowing users to explore their place in the
+          broader social network.
+        </p>
+
+        <h2 class="text-2xl font-sans font-bold mt-8">Features</h2>
+        <ul class="list-disc pl-6 space-y-3">
+          <li>Interactive graph visualization of contact networks</li>
+          <li>Privacy-focused design with user consent for contact sharing</li>
+          <li>Discover mutual connections and relationship patterns</li>
+          <li>Identify clusters and communities within your network</li>
+          <li>Visualize strength of connections based on communication frequency</li>
+          <li>Search and explore your extended network</li>
+          <li>Explore degrees of separation between individuals</li>
+        </ul>
+
+        <h2 class="text-2xl font-sans font-bold mt-8">Technical Details</h2>
+        <p>
+          Phonebook uses Go for its backend services, providing excellent performance and ease of development. The
+          frontend is built with React for a responsive and interactive user experience. Data is stored
+          in ArangoDB, a powerful graph database that efficiently manages the complex relationships between contacts.
+        </p>
+
+        <p>
+          The visualization component uses Canvas for rendering the network graphs, allowing for smooth interaction
+          even with thousands of nodes. Nodes are streamed in as the network is explored and only rendered if necessary.
+          The application employs custom graph traversal algorithms to identify meaningful patterns and communities
+          within
+          the contact network.
+        </p>
+
+        <h2 class="text-2xl font-sans font-bold mt-8">Privacy Considerations</h2>
+        <p>
+          Privacy is a central concern for Phonebook. The application is designed with a strict opt-in model,
+          requiring explicit consent before any contact information is processed. All data is encrypted, and users
+          have complete control over what information is shared and with whom. The project aims to demonstrate
+          the value of social data while respecting privacy boundaries.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="px-16 py-4 mt-16 border-t border-neutral-500 text-neutral-400 text-sm font-serif flex justify-between">
+    <p>&copy; Theodor Ineblom</p>
+    <div class="flex gap-4">
+      <p>+46 73 092 29 43</p>
+      <a href="mailto:theodor@ineblom.com" class="underline">theodor.ineblom.com</a>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ineblom</title>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-neutral-900">
@@ -31,21 +31,23 @@
       <h2 id="projects" class="text-2xl font-bold text-center">Projects</h2>
       <div class="grid grid-cols-2 gap-4 pt-4">
         <div class="flex flex-col h-full">
-          <div class="w-full aspect-[3/2] from-green-400 to-green-600 bg-linear-to-b"></div>
-          <h3 class="font-mono pt-2">Golden Grouse</h3>
+          <div class="w-full aspect-[3/2] from-green-400 to-green-600 bg-linear-to-b rounded-sm"></div>
+          <a href="projects/golden-grouse.html" class="font-mono pt-2 hover:text-neutral-100 transition-all">Golden Grouse</a>
           <p class="font-serif flex-grow">Video editor built to be fast and intuitive. Specially designed for short-form
             content and quick uploads.</p>
+          <a href="projects/golden-grouse.html" class="text-neutral-300 hover:text-neutral-100 text-sm font-mono mt-2 inline-block transition-colors">Learn More &rarr;</a>
           <div class="mt-2 pt-2 border-t text-sm italic">
             <p>C, FFmpeg, ImGui, OpenGL</p>
           </div>
         </div>
         <div class="flex flex-col h-full">
-          <div class="w-full aspect-[3/2] from-sky-400 to-sky-700 bg-linear-to-b"></div>
-          <h3 class="font-mono pt-2">Phonebook</h3>
+          <img src="/phonebook.webp" alt="Phonebook project" class="w-full aspect-[3/2] rounded-sm object-cover" />
+          <a href="projects/phonebook.html" class="font-mono pt-2 hover:text-neutral-100 transition-all">Phonebook</a>
           <p class="font-serif flex-grow">
             An experiment that explores the power of data.
             Builds a network of relationships between all users by accessing their phone contacts.
           </p>
+          <a href="projects/phonebook.html" class="text-neutral-300 hover:text-neutral-100 text-sm font-mono mt-2 inline-block transition-colors">Learn More &rarr;</a>
           <div class="mt-2 pt-2 border-t text-sm italic">
             <p>Go, React, ArangoDB (graph database), Canvas</p>
           </div>
