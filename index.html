@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-neutral-900">
-  <header class="flex justify-between items-center p-4">
+  <header class="flex justify-between items-center py-4 px-16">
     <a href="/" class="text-slate-200 hover:text-slate-500 transition-all text-2xl font-bold font-mono">
       Theodor Ineblom
     </a>
@@ -18,29 +18,29 @@
       theodor@ineblom.com
     </a>
   </header>
-  <main class="container mx-auto text-slate-200 pt-16">
+  <main class="container mx-auto text-slate-300 pt-16">
 
-    <!-- Introduction -->
     <div class="font-serif text-center">
-      Hi, my name is Theodor and I am passionate about programming, performance and great software.
+      Hi, my name is Theodor and I am passionate about programming, performance, and great software.
     </div>
 
-    <div class="flex flex-col items-center pt-16">
-      <h1 class=" text-2xl font-bold">Projects</h1>
-      <div class="grid grid-cols-2 gap-4 max-w-2xl pt-4">
-        <div>
+    <div class="pt-16 max-w-2xl mx-auto">
+      <h2 id="projects" class="text-2xl font-bold text-center">Projects</h2>
+      <div class="grid grid-cols-2 gap-4 pt-4">
+        <div class="flex flex-col h-full">
           <div class="w-full aspect-[3/2] from-green-400 to-green-600 bg-linear-to-b"></div>
-          <h2 class="font-mono pt-2">Golden Grouse</h2>
-          <p class="font-serif">Video editor built to be fast and intuitive. Special made for short form content and quick uploads.</p>
+          <h3 class="font-mono pt-2">Golden Grouse</h3>
+          <p class="font-serif flex-grow">Video editor built to be fast and intuitive. Specially made for short-form
+            content and quick uploads.</p>
           <div class="mt-2 pt-2 border-t text-sm italic">
             <p>C, FFmpeg, ImGui, OpenGL</p>
           </div>
         </div>
-        <div>
+        <div class="flex flex-col h-full">
           <div class="w-full aspect-[3/2] from-sky-400 to-sky-700 bg-linear-to-b"></div>
-          <h2 class="font-mono pt-2">Phonebook</h2>
-          <p class="font-serif">
-            Experiment exploring the power of data.
+          <h3 class="font-mono pt-2">Phonebook</h3>
+          <p class="font-serif flex-grow">
+            An experiment that explores the power of data.
             Builds a network of relationships between all users by accessing their phone contacts.
           </p>
           <div class="mt-2 pt-2 border-t text-sm italic">
@@ -51,10 +51,74 @@
     </div>
 
     <div class="pt-16">
-      <h1 class="text-center text-2xl font-bold">Work Experience</h1>
+      <h2 class="text-center text-2xl font-bold">Work Experience</h2>
       <ul class="mx-auto max-w-2xl list-disc pt-4">
-        <li>Swedish Armed Forces (2024-2025)</li>
-        <li>Carrier Pigeon AB (2023-2024)</li>
+
+        <li class="mb-4">
+          <div class="flex justify-between">
+            <h3><span class="font-bold">Systems Engineer Squad Leader</span>, Swedish Armed Forces</h3>
+            <p>July 2024 - Present</p>
+          </div>
+          <div class="ml-4 font-serif pt-2">
+            <ul class="space-y-2">
+              <li>
+                Completed basic military training, emphasizing discipline, precision, speed, and teamwork.
+              </li>
+              <li>
+                Engaged in extensive leadership training through education and field exercises.
+              </li>
+              <li>
+                Gained expertise in networking, systems engineering, and cybersecurity.
+              </li>
+              <li>
+                Responsible for installing, administering, and maintaining a portable server room at the front line.
+              </li>
+              <li>
+                Assisted in constructing and connecting the command post.
+              </li>
+              <li>
+                Deployed and maintained LSS Mark, a combat management system developed by SAAB.
+              </li>
+              <li>
+                Provided comprehensive IT support in the field, troubleshooting and resolving technical issues under
+                operational conditions.
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-4">
+          <div class="flex justify-between">
+            <h3><span class="font-bold">Lead Software Engineer (full-stack)</span>, Carrier Pigeon AB</h3>
+            <p>Oct 2023 - June 2024</p>
+          </div>
+          <div class="ml-4 font-serif pt-2">
+            <ul class="space-y-2">
+              <li>
+                Built <a href="https://airon.ai" target="_blank" class="underline">airon.ai</a> from the ground up as a
+                solo developer.
+              </li>
+              <li>
+                <div
+                  class="py-1 px-2 bg-neutral-800 outline outline-neutral-600 rounded-md font-sans my-2 text-neutral-300">
+                  AIron is a cloud service for renting bare metal GPUs for AI workloads.</div>
+              </li>
+              <li>Communicated directly with shareholders.</li>
+              <li>Led the project from initial concept to full-scale production deployment and started scaling.</li>
+              <li>
+                <span class="font-sans font-medium">Developed:</span> user server provisioning, frontend functionality
+                and design, payment/billing systems,
+                authentication, organization and user management, settings, email services, project management features,
+                admin dashboard, and more.
+              </li>
+              <li>
+                Tech: <i>
+                  Go, PostgreSQL, RabbitMQ, Typescript, Vue, Tailwind, Stripe, MAAS.
+                </i>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </div>
   </main>
