@@ -1,15 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ineblom</title>
-    <link rel="stylesheet" href="src/style.css">
-  </head>
-  <body class="bg-slate-900">
-    <header class="flex justify-between items-center p-4">
-      <a href="/" class="text-slate-200 hover:text-slate-500 transition-all text-2xl font-bold font-mono">Ineblom</a>
-    </header>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ineblom</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="bg-neutral-900">
+  <header class="flex justify-between items-center p-4">
+    <a href="/" class="text-slate-200 hover:text-slate-500 transition-all text-2xl font-bold font-mono">
+      Theodor Ineblom
+    </a>
+    <a href="mailto:theodor@ineblom.com" class="text-slate-200 hover:text-slate-500 transition-all text-sm font-mono">
+      theodor@ineblom.com
+    </a>
+  </header>
+  <main class="container mx-auto text-slate-200 pt-16">
+
+    <!-- Introduction -->
+    <div class="font-serif text-center">
+      Hi, my name is Theodor and I am passionate about programming, performance and great software.
+    </div>
+
+    <div class="flex flex-col items-center pt-16">
+      <h1 class=" text-2xl font-bold">Projects</h1>
+      <div class="grid grid-cols-2 gap-4 max-w-2xl pt-4">
+        <div>
+          <div class="w-full aspect-[3/2] from-green-400 to-green-600 bg-linear-to-b"></div>
+          <h2 class="font-mono pt-2">Golden Grouse</h2>
+          <p class="font-serif">Video editor built to be fast and intuitive. Special made for short form content and quick uploads.</p>
+          <div class="mt-2 pt-2 border-t text-sm italic">
+            <p>C, FFmpeg, ImGui, OpenGL</p>
+          </div>
+        </div>
+        <div>
+          <div class="w-full aspect-[3/2] from-sky-400 to-sky-700 bg-linear-to-b"></div>
+          <h2 class="font-mono pt-2">Phonebook</h2>
+          <p class="font-serif">
+            Experiment exploring the power of data.
+            Builds a network of relationships between all users by accessing their phone contacts.
+          </p>
+          <div class="mt-2 pt-2 border-t text-sm italic">
+            <p>Go, React, ArangoDB (graph database)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-16">
+      <h1 class="text-center text-2xl font-bold">Work Experience</h1>
+      <ul class="mx-auto max-w-2xl list-disc pt-4">
+        <li>Swedish Armed Forces (2024-2025)</li>
+        <li>Carrier Pigeon AB (2023-2024)</li>
+      </ul>
+    </div>
+  </main>
+</body>
+
 </html>
