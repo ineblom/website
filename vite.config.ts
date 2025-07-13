@@ -10,8 +10,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'src/index.html',
-        phonebook: 'src/projects/phonebook.html',
-        goldenGrouse: 'src/projects/golden-grouse.html',
       },
     },
   },
